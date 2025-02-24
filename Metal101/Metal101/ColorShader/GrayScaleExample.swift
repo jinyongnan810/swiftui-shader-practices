@@ -39,9 +39,7 @@ struct GrayScaleExample: View {
         NavigationStack {
             GeometryReader { geo in
                 ZStack {
-                    Image("tree")
-                        .resizable()
-                        .scaledToFill()
+                    TreeView()
                         .colorEffect(
                             ShaderLibrary
                                 .grayScale(

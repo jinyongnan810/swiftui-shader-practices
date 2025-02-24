@@ -15,6 +15,9 @@ struct ContentView: View {
                     NavigationLink("Gray Scale") {
                         GrayScaleExample()
                     }
+                    NavigationLink("UV Pixel Coordinate") {
+                        UVShaderExample()
+                    }
                 }
 
             }.navigationTitle("Metal 101")
