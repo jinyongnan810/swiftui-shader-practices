@@ -18,6 +18,9 @@ struct ContentView: View {
                     NavigationLink("UV Pixel Coordinate") {
                         UVShaderExample()
                     }
+                    NavigationLink("Animation with Timeline") {
+                        AnimatingCenterExample()
+                    }
                 }
 
             }.navigationTitle("Metal 101")
