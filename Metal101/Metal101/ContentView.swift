@@ -21,6 +21,9 @@ struct ContentView: View {
                     NavigationLink("Animation with Timeline") {
                         AnimatingCenterExample()
                     }
+                    NavigationLink("Draggable Circle") {
+                        OpacityZeroCircleExample()
+                    }
                 }
 
             }.navigationTitle("Metal 101")
