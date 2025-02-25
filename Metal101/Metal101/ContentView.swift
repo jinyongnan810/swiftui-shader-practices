@@ -24,6 +24,9 @@ struct ContentView: View {
                     NavigationLink("Draggable Circle") {
                         OpacityZeroCircleExample()
                     }
+                    NavigationLink("Swizzle") {
+                        SwizzleExample()
+                    }
                 }
 
             }.navigationTitle("Metal 101")
