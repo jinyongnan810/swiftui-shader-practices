@@ -18,8 +18,8 @@ using namespace metal;
 
 // Distortion Effect: https://developer.apple.com/documentation/swiftui/view/distortioneffect(_:maxsampleoffset:isenabled:)
 // [[ stitchable ]] float2 name(float2 position, args...)
-[[ stitchable ]] float2 name2(float2 position) {
-    float2 result = float2(position.x, position.y + 2 * sin(position.x));
+[[ stitchable ]] float2 SineShader(float2 position, float amplitude) {
+    float2 result = float2(position.x, position.y + amplitude * sin(position.x));
     return result;
 }
 

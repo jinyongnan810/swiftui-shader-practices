@@ -9,18 +9,37 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Text("Color Effect!")
-                .font(.largeTitle)
-                .colorEffect(ShaderLibrary.name1())
-            Text("Distortion Effect!")
-                .font(.largeTitle)
-                .distortionEffect(ShaderLibrary.name2(), maxSampleOffset: .zero)
-            Text("Layer Effect!")
-                .font(.largeTitle)
-                .layerEffect(ShaderLibrary.name3(), maxSampleOffset: .zero)
+        NavigationStack {
+            List {
+                Section("Color Shader") {
+                    NavigationLink("Gray Scale") {
+                        GrayScaleExample()
+                    }
+                    NavigationLink("UV Pixel Coordinate") {
+                        UVShaderExample()
+                    }
+                    NavigationLink("Animation with Timeline") {
+                        AnimatingCenterExample()
+                    }
+                    NavigationLink("Draggable Circle") {
+                        OpacityZeroCircleExample()
+                    }
+                    NavigationLink("Swizzle") {
+                        SwizzleExample()
+                    }
+                    NavigationLink("Smooth Line Plot") {
+                        SmoothStepFunctionExample()
+                    }
+                    NavigationLink("Grainy Effect") {
+                        GrainyEffectExample()
+                    }
+                    NavigationLink("Split Color") {
+                        SplitColorExample()
+                    }
+                }
+
+            }.navigationTitle("Metal 101")
         }
-        .padding()
     }
 }
 

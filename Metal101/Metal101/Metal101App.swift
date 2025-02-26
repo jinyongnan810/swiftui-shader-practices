@@ -12,6 +12,7 @@ struct Metal101App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: WeightsModel.self)
         }
     }
 }
