@@ -33,6 +33,9 @@ struct ContentView: View {
                     NavigationLink("Grainy Effect") {
                         GrainyEffectExample()
                     }
+                    NavigationLink("Split Color") {
+                        SplitColorExample()
+                    }
                 }
 
             }.navigationTitle("Metal 101")
