@@ -27,6 +27,9 @@ struct ContentView: View {
                     NavigationLink("Swizzle") {
                         SwizzleExample()
                     }
+                    NavigationLink("Smooth Line Plot") {
+                        SmoothStepFunctionExample()
+                    }
                 }
 
             }.navigationTitle("Metal 101")
