@@ -30,6 +30,9 @@ struct ContentView: View {
                     NavigationLink("Smooth Line Plot") {
                         SmoothStepFunctionExample()
                     }
+                    NavigationLink("Grainy Effect") {
+                        GrainyEffectExample()
+                    }
                 }
 
             }.navigationTitle("Metal 101")
