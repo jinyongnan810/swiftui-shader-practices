@@ -36,6 +36,9 @@ struct ContentView: View {
                     NavigationLink("Split Color") {
                         SplitColorExample()
                     }
+                    NavigationLink("Glow Effect") {
+                        GlowingEffectExample()
+                    }
                 }
 
             }.navigationTitle("Metal 101")
