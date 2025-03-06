@@ -12,7 +12,7 @@ struct SplitColorExample: View {
     var body: some View {
         VStack {
             TreeView(fit: true)
-                .visualEffect {
+                .visualEffect { [splitLine]
                     content,
                         proxy in
                     content
