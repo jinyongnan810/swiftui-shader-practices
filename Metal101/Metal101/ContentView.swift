@@ -39,6 +39,15 @@ struct ContentView: View {
                     NavigationLink("Glow Effect") {
                         GlowingEffectExample()
                     }
+                    NavigationLink("Stripe Colors") {
+                        StripeColorsShaderExample()
+                    }
+                }
+
+                Section("Distortion Shader") {
+                    NavigationLink("Tile Shader") {
+                        TileShaderExample()
+                    }
                 }
 
             }.navigationTitle("Metal 101")
