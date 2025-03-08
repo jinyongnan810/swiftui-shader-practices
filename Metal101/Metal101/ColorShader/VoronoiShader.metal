@@ -8,10 +8,6 @@
 #include <metal_stdlib>
 using namespace metal;
 
-float oscillation1(float x, float speed, float offset) {
-    return pow(sin(x * speed + offset), 2);
-}
-
 constant float2 points[30] = {
     float2(0.5, 0.6),
     float2(0.7, 0.8),

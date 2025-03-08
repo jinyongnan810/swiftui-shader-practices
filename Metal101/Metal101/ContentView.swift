@@ -60,6 +60,9 @@ struct ContentView: View {
                     NavigationLink("Voronoi Shader") {
                         VoronoiShaderExample()
                     }
+                    NavigationLink("Amazing Shader") {
+                        AmazingShaderExample()
+                    }
                 }
 
             }.navigationTitle("Metal 101")
