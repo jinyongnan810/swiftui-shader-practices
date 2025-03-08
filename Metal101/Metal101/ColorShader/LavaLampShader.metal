@@ -13,7 +13,7 @@ float oscillation(float x, float speed, float offset) {
 }
 
 [[ stitchable ]] half4 LavaLampShader(float2 position, half4 color, float2 size, float time) {
-    half4 result = half4(0);
+    half4 result = half4(1);
     float2 uv = position / size;
 
     float threshhold = 0.3;
