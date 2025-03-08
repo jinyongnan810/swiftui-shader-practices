@@ -42,15 +42,6 @@ struct ContentView: View {
                     NavigationLink("Stripe Colors") {
                         StripeColorsShaderExample()
                     }
-                }
-
-                Section("Distortion Shader") {
-                    NavigationLink("Tile Shader") {
-                        TileShaderExample()
-                    }
-                    NavigationLink("Angle Shader") {
-                        AngleShaderExample()
-                    }
                     NavigationLink("Inspiration Shader") {
                         InspirationalShaderExample()
                     }
@@ -62,6 +53,17 @@ struct ContentView: View {
                     }
                     NavigationLink("Amazing Shader") {
                         AmazingShaderExample()
+                    }
+                    NavigationLink("Fractal Brownian Motion Shader") {
+                        FractalBrownianMotionShaderExample()
+                    }
+                }
+                Section("Distortion Shader") {
+                    NavigationLink("Tile Shader") {
+                        TileShaderExample()
+                    }
+                    NavigationLink("Angle Shader") {
+                        AngleShaderExample()
                     }
                 }
 
