@@ -54,6 +54,9 @@ struct ContentView: View {
                     NavigationLink("Inspiration Shader") {
                         InspirationalShaderExample()
                     }
+                    NavigationLink("Blob Animation Shader") {
+                        LavaLampShaderExample()
+                    }
                 }
 
             }.navigationTitle("Metal 101")
