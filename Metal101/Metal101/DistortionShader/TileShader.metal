@@ -11,6 +11,7 @@ using namespace metal;
 
 [[ stitchable ]] float2 TileEffect(float2 position, float2 size, float2 tile) {
     float2 result = fmod(position * tile, size);
+//    float2 result = position * tile;
     return result;
 }
 

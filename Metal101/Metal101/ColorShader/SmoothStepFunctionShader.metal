@@ -10,9 +10,9 @@ using namespace metal;
 
 float plot(float2 uv, float y, float width) {
     float delta = width/2;
-//    return smoothstep(y-delta, y, uv.y) - smoothstep(y, y+delta, uv.y);
+    return smoothstep(y-delta, y, uv.y) - smoothstep(y, y+delta, uv.y);
 //    return smoothstep(y-delta, y, uv.y);
-    return step(y-delta, uv.y) - step(y+delta, uv.y);
+//    return step(y-delta, uv.y) - step(y+delta, uv.y);
 }
 
 [[ stitchable ]] half4 smoothStepFunction(float2 position, half4 color, float2 size, float startBendingPosition, float lineWidth) {
@@ -22,8 +22,8 @@ float plot(float2 uv, float y, float width) {
     half4 graphColor = mix(blue, green, uv.x);
     half4 bgColor = half4(0.3,0.3,0.3,1);
 
-   // float y = smoothstep(startBendingPosition, 1-startBendingPosition, uv.x);
-    float y = 0.5 + 0.5 * sin(uv.x * M_PI_H * 2);
+    float y = smoothstep(startBendingPosition, 1-startBendingPosition, uv.x);
+//    float y = 0.5 + 0.5 * sin(uv.x * M_PI_H * 2);
 
     float percent = plot(uv, 1-y, lineWidth);
 

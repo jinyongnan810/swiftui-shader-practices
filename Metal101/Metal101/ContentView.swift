@@ -30,6 +30,9 @@ struct ContentView: View {
                     NavigationLink("Smooth Line Plot") {
                         SmoothStepFunctionExample()
                     }
+                    NavigationLink("Glowing Rings") {
+                        GlowingRingsExample()
+                    }
                     NavigationLink("Grainy Effect") {
                         GrainyEffectExample()
                     }

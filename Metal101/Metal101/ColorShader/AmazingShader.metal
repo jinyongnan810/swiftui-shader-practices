@@ -5,6 +5,7 @@
 //  Created by Yuunan kin on 2025/02/26.
 //
 // from https://www.shadertoy.com/view/mtyGWy
+// ref: https://www.youtube.com/watch?v=f4s1h2YETNY
 #include <metal_stdlib>
 using namespace metal;
 half3 palette(float time) {
