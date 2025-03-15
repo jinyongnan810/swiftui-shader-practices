@@ -70,6 +70,12 @@ struct ContentView: View {
                     }
                 }
 
+                Section("Layer Shader") {
+                    NavigationLink("Ripple Tap") {
+                        RippleTapExample()
+                    }
+                }
+
             }.navigationTitle("Metal 101")
         }
     }
