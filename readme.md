@@ -12,8 +12,8 @@
 | [Glowing Rings](https://github.com/jinyongnan810/swiftui-shader-practices/blob/main/Metal101/Metal101/ColorShader/GlowingRingsShader.metal) | ![Screen Recording 2025-03-15 at 9 23 04](https://github.com/user-attachments/assets/f445e42a-51fb-4c94-a9b8-1104d0ae9a1a) | 
 | [Color Stripes](https://github.com/jinyongnan810/swiftui-shader-practices/blob/main/Metal101/Metal101/ColorShader/StripeColorsShader.metal) | ![color stripes](https://github.com/user-attachments/assets/85816494-aee2-4750-b0b0-1e94b13e7f94) | 
 | [Tile](https://github.com/jinyongnan810/swiftui-shader-practices/blob/main/Metal101/Metal101/DistortionShader/TileShader.metal) | ![tile](https://github.com/user-attachments/assets/dfe0b470-be00-42bc-a0ce-0e18c48a4fa5) | 
-| [Some Amazing Effect](https://github.com/jinyongnan810/swiftui-shader-practices/blob/main/Metal101/Metal101/ColorShader/AmazingShader.metal) | ![amazing](https://github.com/user-attachments/assets/b2228f4b-11da-460f-aabd-20eed994a2b7) | 
-
+| [Amazing Effect with multiple color rendering](https://github.com/jinyongnan810/swiftui-shader-practices/blob/main/Metal101/Metal101/ColorShader/AmazingShader.metal) | ![amazing](https://github.com/user-attachments/assets/b2228f4b-11da-460f-aabd-20eed994a2b7) | 
+| [Ripper Tap](https://github.com/jinyongnan810/swiftui-shader-practices/blob/main/Metal101/Metal101/LayerShader/RippleTapEffect.metal) | ![Screen Recording 2025-03-15 at 9 53 43](https://github.com/user-attachments/assets/be1c48ab-975e-4cfa-a51b-feb44f1d75f5) | 
 
 
 
