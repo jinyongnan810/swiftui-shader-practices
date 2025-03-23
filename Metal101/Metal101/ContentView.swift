@@ -15,6 +15,9 @@ struct ContentView: View {
                     NavigationLink("Gray Scale") {
                         GrayScaleExample()
                     }
+                    NavigationLink("Infared Effect") {
+                        InfaredEffectExample()
+                    }
                     NavigationLink("UV Pixel Coordinate") {
                         UVShaderExample()
                     }
