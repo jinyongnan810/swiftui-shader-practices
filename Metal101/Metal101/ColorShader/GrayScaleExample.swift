@@ -36,38 +36,36 @@ struct GrayScaleExample: View {
     @Query private var savedWeights: [WeightsModel]
 
     var body: some View {
-        NavigationStack {
-            GeometryReader { geo in
-                ZStack {
-                    TreeView()
-                        .colorEffect(
-                            ShaderLibrary
-                                .grayScale(
-                                    .float4(redWeight, greenWeight, 1 - redWeight - greenWeight, 0)
-                                )
-                        )
-                        .ignoresSafeArea()
-                        .frame(
-                            width: geo.size.width,
-                            height: geo.size.height
-                        )
-                    VStack {
-                        Spacer()
-                        GrayScaleControls(redWeight: $redWeight, greenWeight: $greenWeight)
-                            .padding()
-                    }
-                }
-            }.toolbar {
-                Button("Add", systemImage: "plus.circle") {
-                    let item = WeightsModel(
-                        name: "Weights \(savedWeights.count + 1)",
-                        redWeight: redWeight,
-                        greenWeight: greenWeight,
-                        blueWeight: 1 - redWeight - greenWeight
+        GeometryReader { geo in
+            ZStack {
+                TreeView()
+                    .colorEffect(
+                        ShaderLibrary
+                            .grayScale(
+                                .float4(redWeight, greenWeight, 1 - redWeight - greenWeight, 0)
+                            )
                     )
-                    modelContext.insert(item)
-                    try? modelContext.save()
+                    .ignoresSafeArea()
+                    .frame(
+                        width: geo.size.width,
+                        height: geo.size.height
+                    )
+                VStack {
+                    Spacer()
+                    GrayScaleControls(redWeight: $redWeight, greenWeight: $greenWeight)
+                        .padding()
                 }
+            }
+        }.toolbar {
+            Button("Add", systemImage: "plus.circle") {
+                let item = WeightsModel(
+                    name: "Weights \(savedWeights.count + 1)",
+                    redWeight: redWeight,
+                    greenWeight: greenWeight,
+                    blueWeight: 1 - redWeight - greenWeight
+                )
+                modelContext.insert(item)
+                try? modelContext.save()
             }
         }
     }
@@ -126,6 +124,8 @@ struct GrayScaleControls: View {
 }
 
 #Preview {
-    GrayScaleExample()
-        .modelContainer(for: WeightsModel.self)
+    NavigationStack {
+        GrayScaleExample()
+            .modelContainer(for: WeightsModel.self)
+    }
 }
