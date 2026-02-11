@@ -10,9 +10,24 @@
 		3FB83F6B2D58127B00CF1B02 /* Metal101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metal101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		3F6F3B592F3C6444005A9E80 /* Exceptions for "Metal101" folder in "Metal101" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				ColorShader/README.md,
+				DistortionShader/README.md,
+				LayerShader/README.md,
+			);
+			target = 3FB83F6A2D58127B00CF1B02 /* Metal101 */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		3FB83F6D2D58127B00CF1B02 /* Metal101 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				3F6F3B592F3C6444005A9E80 /* Exceptions for "Metal101" folder in "Metal101" target */,
+			);
 			path = Metal101;
 			sourceTree = "<group>";
 		};
