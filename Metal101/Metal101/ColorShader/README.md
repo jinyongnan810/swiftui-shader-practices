@@ -116,6 +116,18 @@ Creates a glowing circle with adjustable intensity.
 
 ---
 
+### Dot Indicator
+Creates a luminous notification-style dot with animated rays.
+
+**Techniques:**
+- Polar coordinates with `length()` and `atan2()` for radial shaping
+- Gaussian-style falloff using `exp(-pow(...))` for core, glow, and halo layers
+- Angular ray masks from high-power cosine lobes
+- Slow time-based rotation and subtle ray-length modulation
+- `TimelineView(.animation)` with `visualEffect` to pass `time` and `proxy.size`
+
+---
+
 ### Stripe Colors
 Creates repeating vertical color stripes.
 

@@ -29,6 +29,7 @@ enum Page: String, Hashable {
     case voronoiShader = "Voronoi Shader"
     case amazingShader = "Amazing Shader"
     case fractalBrownianMotionShader = "Fractal Brownian Motion Shader"
+    case dotIndicator = "Dot Indicator"
     // Distortion Shader
     case tileShader = "Tile Shader"
     case angleShader = "Angle Shader"
@@ -57,6 +58,7 @@ let colorShaderPages: [Page] = [
     .voronoiShader,
     .amazingShader,
     .fractalBrownianMotionShader,
+    .dotIndicator,
 ]
 
 /// Distortion shader demos
@@ -131,6 +133,8 @@ struct ContentView: View {
                     AmazingShaderExample()
                 case .fractalBrownianMotionShader:
                     FractalBrownianMotionShaderExample()
+                case .dotIndicator:
+                    DotIndicatorExample()
                 case .tileShader:
                     TileShaderExample()
                 case .angleShader:
